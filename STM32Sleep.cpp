@@ -5,7 +5,7 @@
 static void noop() {};
 
 
-void sleepAndWakeUp(SleepMode mode, RTClock *rt, uint8_t seconds) {
+void sleepAndWakeUp(SleepMode mode, RTClock *rt, uint32_t seconds) {
   rt->createAlarm(&noop, rt->getTime() + seconds);
   goToSleep(mode);
 }
