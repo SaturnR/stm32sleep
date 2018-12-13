@@ -6,7 +6,7 @@ typedef enum SleepMode {
   STANDBY
 } SleepMode;
 
-void sleepAndWakeUp(SleepMode mode, RTClock *rt, uint8_t seconds);
+void sleepAndWakeUp(SleepMode mode, RTClock *rt, uint32_t seconds);
 
 void goToSleep(SleepMode mode);
 
